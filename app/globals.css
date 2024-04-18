@@ -13,6 +13,17 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    /* still deciding on color palette */
+    /* https://coolors.co/7a7978-87cbac-90ffdc-8de4ff-8ac4ff */
+    --aquarmarine: #90ffdc;
+    --graay: #7a7978;
+    --cambridge-blue: #87cbac;
+    --non-photo-blue:8de4ff;
+    --jordy-blue:#8ac4ff;
+
+    --primary-color: #fff;
+    --secondary-color: #000;
   }
 }
 
@@ -31,3 +42,7 @@ body {
     text-wrap: balance;
   }
 }
+
+
+
+
