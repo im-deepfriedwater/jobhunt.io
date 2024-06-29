@@ -5,7 +5,9 @@ export default function Home() {
     <main className="flex min-h-screen h-dvh">
       <div className="w-screen">
         <div className="bg-blue-50 h-full">
-          <JobEntryForm />
+          <div>
+            <JobEntryForm />
+          </div>
         </div>
       </div>
     </main>

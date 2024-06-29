@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ResponsiveSidebarNav from "@/components/responsive-sidebar-nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </head>
+      <body className={inter.className}>
+        {/* two pane container */}
+        <div className="flex">
+          <div className="col-span-2">
+            
+            <ResponsiveSidebarNav />
+          </div>
+          <div className="flex flex-col flex-grow w-screen md:w-full min-h-screen">
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
